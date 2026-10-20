@@ -1,26 +1,3 @@
-// Extracting ERA5 climate data and MODIS NDVI using Google Earth Engine
-
-// By Badis Zammouri & Mohamed Chandoul
-
-// OUTPUT: "NVDI_Climate_Features.csv"
-// Prodictors:
-//   Rain_OctNov
-//   Rain_JanMar
-//   Temp_Dec
-//   Soil
-//   NDVI
-//   VCI
-//   VHI
-// Years: 2000-2018
-
-/////////////////////////////////////////////////////////////////////
-
-// 1. Open https://code.earthengine.google.com/
-
-// 2. Upload your Tunisia governorates shapefile to Assets (Use Tunisia_regions)
-
-// 3. Paste the code and run. Then download csv from Google Drive
-
 var governorates = ee.FeatureCollection(
   "projects/cereal-ml/assets/Tunisia_regions"
 );
